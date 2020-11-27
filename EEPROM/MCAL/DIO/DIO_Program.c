@@ -8,24 +8,8 @@
 #include "../../lib/AVR32_REG.h"
 #include "DIO_Interface.h"
 #include "DIO_Private.h"
-/*
-ErrorState DIO_Inti()
-{
-		ErrorState error =ES_NOK;
-		DDRA=PORTA_DIRECTION;
-		DDRB=PORTB_DIRECTION;
-		DDRC=PORTC_DIRECTION;
-		DDRD=PORTD_DIRECTION;
 
-		PORTA=PORTA_VALUE;
-		PORTB=PORTB_VALUE;
-		PORTC=PORTC_VALUE;
-		PORTD=PORTD_VALUE;
 
-		error=ES_OK;
-		return error;
-}
-*/
 void DIO_VidSetPinDirection(u8 Copy_U8port,u8 Copy_U8Pin,u8 Copy_U8Direction)
 {	ErrorState error=ES_NOK;
 	/*check if dir is output*/
